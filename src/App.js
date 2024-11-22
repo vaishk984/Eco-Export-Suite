@@ -1,11 +1,10 @@
 import React, { useState } from "react";
- // Import the CSS file for styles
 
 function App() {
   const [shippingRates, setShippingRates] = useState([]); // State for storing rates
-  const [error, setError] = useState(null); // For handling errors
+  const [error, setError] = useState(null); 
   const [cheapestRate, setCheapestRate] = useState(null); // For storing the cheapest rate
-  const [sortOrder, setSortOrder] = useState("asc"); // To track sorting order
+  const [sortOrder, setSortOrder] = useState("asc");
 
   // State for user input
   const [addressFrom, setAddressFrom] = useState({
@@ -41,7 +40,7 @@ function App() {
 
   // Fetch Shipping Rates
   const fetchShippingRates = async (e) => {
-    e.preventDefault(); // Prevent form submission from reloading the page
+    e.preventDefault(); 
 
     try {
       const response = await fetch("https://api.goshippo.com/shipments", {
@@ -61,16 +60,16 @@ function App() {
       console.log("API Response: ", data);
 
       if (response.ok) {
-        setShippingRates(data.rates); // Set all rates
+        setShippingRates(data.rates); 
         const minRate = data.rates.reduce((cheapest, current) => {
           return parseFloat(current.amount) < parseFloat(cheapest.amount)
             ? current
             : cheapest;
         }, data.rates[0]);
-        setCheapestRate(minRate); // Set the cheapest rate
+        setCheapestRate(minRate);
         setError(null); 
       } else {
-        setError(data.messages); // Handle errors from API
+        setError(data.messages); 
       }
     } catch (err) {
       setError(err.message); // Catch any error during fetch
@@ -84,8 +83,8 @@ function App() {
         ? parseFloat(a.amount) - parseFloat(b.amount)
         : parseFloat(b.amount) - parseFloat(a.amount);
     });
-    setShippingRates(sortedRates); // Update state with sorted rates
-    setSortOrder(order); // Update the current sort order
+    setShippingRates(sortedRates); 
+    setSortOrder(order); 
   };
 
   return (
