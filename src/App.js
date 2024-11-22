@@ -47,7 +47,7 @@ function App() {
       const response = await fetch("https://api.goshippo.com/shipments", {
         method: "POST",
         headers: {
-          Authorization: `ShippoToken ${process.env.REACT_APP_SHIPPO_API_KEY}`, // Replace with your API key
+          Authorization: `ShippoToken ${process.env.REACT_APP_SHIPPO_API_KEY}`, 
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
@@ -68,7 +68,7 @@ function App() {
             : cheapest;
         }, data.rates[0]);
         setCheapestRate(minRate); // Set the cheapest rate
-        setError(null); // Clear previous errors
+        setError(null); 
       } else {
         setError(data.messages); // Handle errors from API
       }
