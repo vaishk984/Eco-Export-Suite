@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
 
 * {
@@ -185,3 +186,239 @@ body {
         display: block;
     }
 }
+=======
+/* style.css */
+
+/* Base Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #111111;
+    color: #e6e6e6;
+}
+
+/* Header */
+header {
+    background: #111111;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+header .logo img {
+    height: 50px;
+}
+
+header h1 {
+    font-size: 1.8rem;
+    color: #ffffff;
+}
+
+header nav {
+    display: flex;
+    gap: 20px;
+}
+
+header nav a {
+    color: #e6e6e6;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+header nav a:hover {
+    background: #48cae4;
+    color: #111111;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(to right, #48cae4, #0077b6);
+    padding: 100px 40px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.hero button {
+    background: #111111;
+    color: #ffffff;
+    padding: 15px 30px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.hero button:hover {
+    background: #ffffff;
+    color: #111111;
+}
+
+/* Features Section */
+/* Features Section - Vertical Layout */
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    display: flex; /* Use flexbox for vertical layout */
+    flex-direction: column; /* Stack items vertically */
+    gap: 30px; /* Add space between sections */
+    padding: 20px;
+}
+
+section {
+    background: #1c1c1c;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.7);
+}
+
+.feature-icon {
+    font-size: 2.5rem;
+    color: #48cae4;
+    margin-bottom: 15px;
+}
+
+button {
+    background: #48cae4;
+    color: #111111;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: #ade8f4;
+}
+
+/* Footer */
+footer {
+    background: #1c1c1c;
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #333333;
+}
+
+footer .social-icons {
+    margin-top: 10px;
+}
+
+footer .social-icons a {
+    color: #48cae4;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+footer .social-icons a:hover {
+    color: #ffffff;
+}
+
+
+@media only screen and (max-width: 768px) {
+
+    /* Header */
+    header {
+        padding: 15px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    header nav {
+        margin-top: 10px;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    header nav a {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+
+    /* Hero Section */
+    .hero {
+        padding: 60px 20px;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .hero button {
+        padding: 12px 25px;
+        font-size: 0.9rem;
+    }
+
+    /* Features Section */
+    main {
+        padding: 10px;
+    }
+
+    main section {
+        padding: 15px;
+    }
+
+    .feature-icon {
+        font-size: 2rem;
+    }
+
+    button {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+
+    /* Footer */
+    footer {
+        padding: 15px;
+    }
+
+    footer .social-icons a {
+        font-size: 1.2rem;
+    }
+}
+
+
+
+
+
+>>>>>>> d9a8d79691655f5bb8395994c7a66bd5f532754d
