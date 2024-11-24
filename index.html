@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shipping Rates</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="form-main">
+    <h1 class="title">Shipping Rates</h1>
+
+    <!-- Input Form -->
+     
+    <form id="shipping-form" class="form">
+      <div class="form-section">
+        <h2>Sender's Address</h2>
+        <input type="text" class="input" id="sender-city" placeholder="City" value="New York">
+        <input type="text" class="input" id="sender-state" placeholder="State" value="NY">
+        <input type="text" class="input" id="sender-zip" placeholder="Zip Code" value="10001">
+      </div>
+
+      <div class="form-section">
+        <h2>Receiver's Address</h2>
+        <input type="text" class="input" id="receiver-city" placeholder="City" value="Los Angeles">
+        <input type="text" class="input" id="receiver-state" placeholder="State" value="CA">
+        <input type="text" class="input" id="receiver-zip" placeholder="Zip Code" value="90001">
+      </div>
+
+      <div class="form-section">
+        <h2>Parcel Details</h2>
+        <input type="text" class="input" id="parcel-length" placeholder="Length" value="10">
+        <input type="text" class="input" id="parcel-width" placeholder="Width" value="15">
+        <input type="text" class="input" id="parcel-height" placeholder="Height" value="10">
+        <input type="text" class="input" id="parcel-weight" placeholder="Weight" value="1">
+      </div>
+
+      <button type="submit" class="btn">Fetch Rates</button>
+    </form>
+
+    <!-- Sort buttons section -->
+  <div class="sort-buttons">
+    <button class="btn" onclick="sortRates('asc')">Sort by Amount (Low to High)</button>
+    <button class="btn" onclick="sortRates('desc')">Sort by Amount (High to Low)</button>
+  </div>
+</div>
+
+  <!-- Cheapest rate display -->
+  <div id="cheapest-rate" class="rate-display" style="display:none;">
+    <h2>Cheapest Rate</h2>
+    <p><strong>Provider:</strong> <span id="cheapest-provider"></span></p>
+    <p><strong>Amount:</strong> <span id="cheapest-amount"></span></p>
+    <p><strong>Service:</strong> <span id="cheapest-service"></span></p>
+  </div>
+
+  <!-- Error display -->
+  <div id="error-message" class="error" style="display:none;"></div>
+
+  <!-- Shipping rates list -->
+  <div id="rate-list-container">
+    <ul id="rate-list" class="rate-list">
+      <!-- Shipping rates will be injected here -->
+    </ul>
+  </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
+
