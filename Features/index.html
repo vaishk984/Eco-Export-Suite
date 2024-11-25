@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Features & Services</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e8f5f3;
+            color: #333;
+        }
+
+        .features-section {
+            text-align: center;
+            padding: 50px 20px;
+
+        }
+
+        .features-section h1 {
+            font-size: 2.5rem;
+            color: #2d645f;
+            margin-bottom: 30px;
+        }
+
+        .features-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .feature-card {
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .feature-card img {
+            width: 100px;
+            margin-bottom: 20px;
+        }
+
+        .feature-card h3 {
+            font-size: 1.5rem;
+            color: #2d645f;
+            margin-bottom: 10px;
+        }
+
+        .feature-card p {
+            font-size: 0.95rem;
+            color: #666;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+        .feature-card button {
+            background-color: #2d645f;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            transition: background-color 0.3s;
+        }
+
+        .feature-card button:hover {
+            background-color: #22524b;
+        }
+
+        @media (max-width: 768px) {
+            .features-container {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section class="features-section">
+        <h1>Our Features & Services</h1>
+        <div class="features-container">
+            <div class="feature-card">
+                <img src="DocumentValidation.png" alt="Communications">
+                <h3>Document Validator</h3>
+                <p>A tool that verifies the accuracy and compliance of export-related documents, ensuring that all legal
+                    and regulatory requirements are met before shipping. This reduces the risk of delays and penalties.
+                </p>
+
+            </div>
+
+            <div class="feature-card">
+                <img src="compare.png" alt="Inspired Design">
+                <h3>Rate Comparator</h3>
+                <p>Allows users to compare shipment rates across different carriers and select the most cost-effective
+                    and reliable option. This feature will be integrated using real-time APIs like the Shippo API.
+                </p>
+
+            </div>
+
+            <div class="feature-card">
+                <img src="chatbot.jpg" alt="Happy Customers">
+                <h3>Query Bot</h3>
+                <p>An AI-powered chatbot designed to help users resolve their queries about shipping, customs, or other
+                    export-related issues in multiple languages, making it accessible to a wider range of users.
+                </p>
+
+            </div>
+            <div class="feature-card">
+                <img src="tracking.png" alt="Happy Customers">
+                <h3>Shipment Tracker Map</h3>
+                <p>A tool that provides real-time tracking of shipments, visually displaying their journey on an
+                    interactive map. It helps users monitor the progress of their shipments, ensuring timely delivery
+                    and offering transparency into potential delays or issues, improving operational efficiency.
+                </p>
+
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
