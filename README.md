@@ -24,9 +24,5 @@ Run the index.html file
 
 ## Deployment
 
-The Project is deployed on Vercel app
-
-```bash
-  https://eco-export-suite.vercel.app/
-```
+The Project is deployed on Vercel app. You can check it https://eco-export-suite.vercel.app/
 
