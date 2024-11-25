@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f3f4f7;
+    color: #333;
+    line-height: 1.6;
+  }
+
+  /* App Container */
+  .App {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Title */
+  .title {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #4a90e2;
+  }
+
+  .form-main{
+    background-color:#ffffff;
+    padding: 60px;
+    margin: 40px 240px 40px 240px ;
+
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  }
+
+  /* Form Styles */
+  .form {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  }
+
+  .form-section {
+    margin-bottom: 20px;
+  }
+
+  h2 {
+    font-size: 18px;
+    color: #4a90e2;
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+
+  .input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s, border-color 0.3s;
+  }
+
+  .input:focus {
+    background-color: #ffffff;
+    border-color: #4a90e2;
+  }
+
+  .btn {
+    background-color: #4a90e2;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+    width: 100%;
+  }
+
+  .btn:hover {
+    background-color: #357abd;
+  }
+
+  .btn:focus {
+    outline: none;
+  }
+
+  /* Sorting Buttons */
+  .sort-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+    justify-content: center;
+  }
+
+  .sort-buttons .btn {
+    width: auto;
+  }
+
+  /* Rate Display Section */
+  .rate-display {
+    background-color: #e9f7fb;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    margin-top: 30px;
+  }
+
+  .rate-display h2 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 15px;
+  }
+
+  .rate-display p {
+    font-size: 16px;
+    margin: 5px 0;
+    color: #555;
+  }
+
+  /* Rate List */
+  .rate-list {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 20px;
+  }
+
+  .rate-item {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+  }
+
+  .rate-item p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 5px;
+  }
+
+  .rate-item p strong {
+    color: #4a90e2;
+  }
+
+  /* Error Message */
+  .error {
+    color: #d9534f;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .App {
+      padding: 15px;
+    }
+
+    .form {
+      padding: 20px;
+    }
+
+    .btn {
+      width: 100%;
+    }
+
+    .sort-buttons {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+  
+  /* Style for the cheapest rate display */
+  #cheapest-rate {
+    background-color: #e0ffe0; /* Light green background */
+    padding: 15px;
+    border: 1px solid #4CAF50; /* Green border */
+    margin-top: 20px;
+    border-radius: 5px;
+  }
+  
+  #cheapest-rate p {
+    font-size: 16px;
+    margin: 5px 0;
+  }
+
+  
